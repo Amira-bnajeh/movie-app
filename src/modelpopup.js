@@ -7,7 +7,7 @@ export default class Modelpopup extends Component {
         this.state = {
             visible : false,
             title:'',
-            image: '',
+            image:'',
             rate: ''
         }
     }
@@ -19,7 +19,7 @@ export default class Modelpopup extends Component {
       }
     
       submitmovie =()=>{
-            this.props.newMovie({title:this.state.title,image:this.state.photo, rate:this.state.rate})
+            this.props.newMovie({title:this.state.title,image:this.state.image, rate:this.state.rate})
             this.setState({
                 visible : false
             });
